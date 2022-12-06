@@ -1,0 +1,29 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: layout/grid
+ * -----------------------------------------------------------------------------
+ */
+
+.grid-1x2-sm,
+.grid-2x1-sm {
+  @include bp-md() {
+    display: grid;
+    grid-column-gap: $space-6x;
+  }
+
+  @include bp-lg() {
+    grid-column-gap: $space-8x;
+  }
+}
+
+.grid-1x2-sm {
+  @include bp-md() {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.grid-2x1-sm {
+  @include bp-md() {
+    grid-template-columns: 2fr 1fr;
+  }
+}

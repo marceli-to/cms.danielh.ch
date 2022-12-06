@@ -1,0 +1,45 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: claim
+        field:
+          input_type: text
+          antlers: false
+          display: Claim
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+          validate:
+            - required
+      -
+        handle: copyright
+        field:
+          input_type: text
+          antlers: false
+          display: Copyright
+          type: text
+          icon: text
+          width: 50
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+          validate:
+            - required
+      -
+        handle: social_media
+        field:
+          mode: default
+          display: 'Social Media'
+          type: collections
+          icon: collections
+          width: 50
+          listable: true
+          instructions_position: above
+          visibility: visible
+          always_save: false

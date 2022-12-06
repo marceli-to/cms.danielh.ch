@@ -1,0 +1,125 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: views/news
+ * -----------------------------------------------------------------------------
+ *
+ *
+ */
+
+.news {
+  border: 1px solid $color-black;
+  margin-top: $space-4x;
+  padding: $space-4x $space-2x;
+
+  @include bp-md() {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: $space-6x;
+    padding: $space-6x;
+  }
+
+  @include bp-lg() {
+    margin-top: $space-8x;
+    padding: $space-8x;
+  }
+
+  article {
+    border-bottom: 1px dashed $color-black;
+    @include font-playfair-regular();
+    @include font-playfair-regular();
+    @include font-size($fs-xs);
+    margin-bottom: $space-6x;
+    padding-bottom: $space-6x;
+
+    &:last-of-type {
+      border-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    @include bp-md() {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+
+      &:first-of-type {
+        border-right: 1px dashed $color-black;
+        padding-right: $space-4x;
+      }
+
+      &:last-of-type {
+        padding-left: $space-4x;
+      }
+    }
+
+    @include bp-lg() {
+      &:first-of-type {
+        padding-right: $space-8x;
+      }
+
+      &:last-of-type {
+        padding-left: $space-8x;
+      }
+    }
+  }
+
+  a {
+    color: $color-black;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  h2, h3, figure {
+    margin-bottom: $space-4x;
+
+    @include bp-md() {
+      margin-bottom: $space-6x;
+    }
+
+    @include bp-lg() {
+      margin-bottom: $space-7x;
+    }
+  }
+
+  h2 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 8px;
+
+    @include bp-lg() {
+      letter-spacing: 11px;
+    }
+
+    hr {
+      background-color: $color-black;
+    }
+
+    span {
+      padding: 0 $space-3x;
+
+      @include bp-lg() {
+        padding: 0 $space-5x;
+      }
+    }
+  }
+
+  h3 {
+    @include font-config-black();
+    @include font-size($fs-sm);
+    text-transform: uppercase;
+  }
+
+  img {
+    @extend %is-responsive;
+  }
+
+  p {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+

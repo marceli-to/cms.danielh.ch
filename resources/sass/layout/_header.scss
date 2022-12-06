@@ -1,0 +1,109 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: layout/header
+ * -----------------------------------------------------------------------------
+ */
+
+header.site-header {
+  margin-bottom: $space-4x;
+
+  @include bp-md() {
+    margin-bottom: $space-6x; 
+  }
+
+  @include bp-lg() {
+    margin-bottom: $space-8x; 
+  }
+
+  > div {
+    @extend %inner-block;
+    margin-top: $space-3x; 
+
+    @include bp-lg() {
+      margin-top: $space-5x; 
+    }
+  }
+
+  figure.logo {
+    display: block;
+    position: relative;
+    
+    &:after {
+      background-color: $color-black;
+      content: '';
+      display: block;
+      height: 1px;
+      left: 110px;
+      line-height: 1;
+      position: absolute;
+      top: 25px;
+      width: calc(100% - 110px);
+
+      @include bp-sm() {
+        left: 162px;
+        top: 37px;
+        width: calc(100% - 162px);
+      }
+
+      @include bp-md() {
+        left: 227px;
+        top: 51px;
+        width: calc(100% - 227px);
+      }
+
+      @include bp-lg() {
+        height: 2px;
+        left: 324px;
+        top: 73px;
+        width: calc(100% - 324px);
+      }
+    }
+    
+    svg {
+      @extend %is-responsive;
+      transform: rotate(-9deg);
+      height: auto;
+      width: 140px;
+
+      @include bp-sm() {
+        width: 200px;
+      }
+
+      @include bp-md() {
+        width: 280px;
+      }
+
+      @include bp-lg() {
+        width: 400px;
+      }
+    }
+  }
+
+  .byline {
+    align-items: center;
+    display: flex;
+
+    hr {
+      background-color: $color-black;
+      display: inline-flex;
+    }
+
+    span {
+      display: inline-flex;
+      @include font-config-semi();
+      padding: 0 $space-3x;
+      word-break: keep-all;
+      white-space: nowrap;
+      width: auto;
+    }
+
+    p {
+      @include font-playfair-regular();
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  }
+}
+

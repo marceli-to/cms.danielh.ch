@@ -1,0 +1,45 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: layout/base
+ * -----------------------------------------------------------------------------
+ */
+
+html {
+	font-size: 100%;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+}
+
+body {
+	animation: backgroundColor 20s ease infinite;
+	color: $color-black;
+	@include font-smoothing();
+	@include font-size($fs-xs);
+	position: relative;
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * Sticky footer
+ * -----------------------------------------------------------------------------
+ */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main.site {
+  flex: 1 0 auto;
+}
+
+footer.site-footer {
+	flex-shrink: 0;
+}
+
+// Scrollbars
+@include scrollbar(4px, #eee);

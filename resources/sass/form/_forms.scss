@@ -1,0 +1,51 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: form/forms
+ * -----------------------------------------------------------------------------
+ */
+
+// Auth - login
+form.auth {
+  @include font-config-semi();
+  max-width: 480px;
+  padding: 0 $space-4x;
+
+  h1 {
+    @include font-size($fs-md);
+    @include font-config-semi();
+    margin-bottom: $space-9x;
+    text-align: left;
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=password] {
+    border-bottom: 1px solid $color-black;
+    padding: $space-2x $space-2x $space-2x 0;
+  }
+
+}
+
+// Auth - recover password
+form.auth--recover {
+  max-width: 480px;
+  .form-group {
+    label {
+      @include bp-xl() {
+        flex: 0 0 125px;
+      }
+    }
+  }
+}
+
+// Auth - reset password form
+form.auth--reset {
+  max-width: 480px;
+  .form-group {
+    label {
+      @include bp-xl() {
+        flex: 0 0 215px;
+      }
+    }
+  }
+}

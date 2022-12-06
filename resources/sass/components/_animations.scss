@@ -1,0 +1,14 @@
+@keyframes backgroundColor {
+  0% {
+    background-color: $color-rose;
+  }
+  33% {
+    background-color: $color-beige;
+  }
+  67% {
+    background-color: $color-pistache;
+  }
+  100% {
+    background-color: $color-rose;
+  }
+}

@@ -1,0 +1,18 @@
+title: 'Daily Menu'
+fields:
+  -
+    handle: daily_menu_text
+    field: wysiwyg.content
+    config:
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - removeformat
+        - anchor
+      display: Text
+      width: 100
+      validate:
+        - required

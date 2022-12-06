@@ -1,0 +1,20 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: component/headings/h1
+ * -----------------------------------------------------------------------------
+ */
+
+h1 {
+  @include font-config-black();
+  @include font-size($fs-xxl);
+  margin-top: $space-3x;
+  text-align: center;
+  text-transform: uppercase;
+
+  em {
+    display: block;
+    @include font-playfair-regular();
+    @include font-size($fs-sm);
+    text-transform: none;
+  }
+}

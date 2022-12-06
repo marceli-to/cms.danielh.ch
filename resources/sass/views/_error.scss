@@ -1,0 +1,27 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: views/error
+ * -----------------------------------------------------------------------------
+ */
+
+section.error {
+
+  h1 {
+    @include font-size($fs-md);
+    margin-bottom: $space-4x;
+  }
+  
+  p {
+    @include font-config-semi();
+    text-align: center;
+
+    a {
+      color: $color-black;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

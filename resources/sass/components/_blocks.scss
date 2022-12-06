@@ -1,0 +1,31 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: component/blocks
+ * -----------------------------------------------------------------------------
+ *
+ */
+
+%inner-block {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  position: relative;
+  padding-left: $space-3x;
+  padding-right: $space-3x;
+
+  @include bp-sm() {
+    max-width: 700px;
+  }
+
+  @include bp-md() {
+    max-width: 980px;
+  }
+
+  @include bp-lg() {
+    padding-left: $space-5x;
+    padding-right: $space-5x;
+    max-width: 1600px;
+  }
+}
+
+

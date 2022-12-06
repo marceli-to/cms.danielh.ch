@@ -1,0 +1,32 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: component/headings/h2
+ * -----------------------------------------------------------------------------
+ */
+
+h2 {
+}
+
+%heading-underline {
+  @include font-arsilon();
+  position: relative;
+  padding-bottom: $space-8x;
+  transform: rotate(-5deg);
+
+  @include bp-sm() {
+    padding-bottom: $space-10x;
+  }
+
+  @include bp-lg() {
+    padding-bottom: $space-14x;
+  }
+
+  &:after {
+    bottom: $space-2x;
+    display: block;
+    content: 'a';
+    @include font-arsilon-underline();
+    height: auto;
+    position: absolute;
+  }
+}

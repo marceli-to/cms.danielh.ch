@@ -1,0 +1,39 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: config/global
+ * -----------------------------------------------------------------------------
+ *
+ * Global settings and variables
+ *
+ */
+
+/* Urls
+ * -------------------- */
+ 
+$url-images: '../img/';
+$url-icons:  '../img/icons/';
+
+
+/* Breakpoints
+ * -------------------- */
+
+$bp-xs:  375px; 
+$bp-sm:  720px;
+$bp-md: 1024px;
+$bp-lg: 1440px;
+$bp-xl: 1440px;
+
+$breakpoints: (
+  sm: $bp-sm,
+  md: $bp-md,
+  lg: $bp-lg,
+  xl: $bp-xl    
+);
+
+
+/* Page
+ * -------------------- */
+
+$page-max-width: 1600px;
+
+

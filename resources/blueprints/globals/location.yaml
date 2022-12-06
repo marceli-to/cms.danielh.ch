@@ -1,0 +1,41 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          input_type: text
+          antlers: false
+          display: Titel
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+          validate:
+            - required
+      -
+        handle: content
+        field: wysiwyg.content
+        config:
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - removeformat
+            - anchor
+      -
+        handle: social_media_channels
+        field:
+          mode: default
+          display: 'Social Media Channels'
+          type: collections
+          icon: collections
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false

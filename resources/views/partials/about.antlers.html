@@ -1,0 +1,37 @@
+<section class="about">
+  <div class="grid-1x2-sm">
+    <article class="about__opening">
+      <div>
+        {{ opening_hours }}
+      </div>
+    </article>
+    {{ if visual }}
+      <div class="about__visual">
+        <div>
+          <figure>
+            <img src="{{ visual }}" alt="" width="{{ visual:width }}" height="{{ visual:height }}" class="lazyload">
+          </figure>
+        </div>
+      </div>
+    {{ endif }}
+  </div>
+  <div class="grid-2x1-sm">
+    <article class="about__shop">
+      <div>
+        <h2>Unser Shop</h2>
+        <h3>Fine Food & Beer</h3>
+        <p>Schon bald kannst du exquisite Schweizer Delikatessen von Regionalen Anbietern sowie aus dem SlowFood Sortiment von Daniel H. zuhause geniessen. Im Moment kosten wir sie für die perfekte Genussfreude vor.</p>
+      </div>
+    </article>
+    <article class="about__location">
+      <div>
+        {{ location }}
+        <p>
+          {{ collection:social_media_channels }}
+            <a href="{{ url }}" target="_blank" rel="noopener noreferer" title="{{ title }}">{{ title }}</a>{{ if first}} | {{ endif }}
+          {{ /collection:social_media_channels }}
+        </p>
+      </div>
+    </article>
+  </div>
+</section>

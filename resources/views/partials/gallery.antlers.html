@@ -1,0 +1,26 @@
+<div class="slideshow-wrapper">
+  <section class="slideshow">
+    <div class="ratio-box">
+      <div class="swiper-container js-swiper">
+        <div class="swiper-wrapper">
+          {{ gallery }}
+            <div class="swiper-slide">
+              <picture>
+                <img src="{{ url }}" alt="{{ alt }}" width="{{ width }}" height="{{ height }}">
+              </picture>
+            </div>
+          {{ /gallery }}
+        </div>
+        <div class="swiper-pagination js-swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  {{ if daily_menu }}
+    <div class="daily-menu">
+      <div>
+        <span class="daily-menu__date"></span>
+        {{ daily_menu }}
+      </div>
+    </div>
+  {{ endif }}
+</div>

@@ -1,0 +1,39 @@
+<section class="news">
+{{ collection:events as="events" }}
+
+  {{ if no_results }}
+    <article>Zur Zeit sind keine Veranstaltungen geplant.</article>
+  {{ endif }}
+
+  {{ if total_results > 1 }}
+  
+    {{ events }}
+      <article>
+        <h2><hr><span>{{ category }}</span><hr></h2>
+        <h3>{{ title }}</h3>
+        <figure>
+          <img src="{{ image }}" alt="" width="{{ image:width }}" height="{{ image:height }}" class="lazyload">
+        </figure>
+        {{ text }}
+      </article>
+    {{ /events }}
+
+  {{ else }}
+
+    {{ events }}
+      <article>
+        <h2><hr><span>{{ category }}</span><hr></h2>
+        <h3>{{ title }}</h3>
+        {{ text }}
+      </article>
+      <article>    
+        <figure>
+          <img src="{{ image }}" alt="" width="{{ image:width }}" height="{{ image:height }}" class="lazyload">
+        </figure>
+      </article>
+    {{ /events }}
+
+  {{ endif }}
+
+{{ /collection:events }}
+</section>

@@ -1,0 +1,17 @@
+<footer class="site-footer">
+  <div>
+    <div>
+      <span class="claim">{{ footer_claim }}</span>
+    </div>
+    <span class="copy">
+      <span>
+        <em>©</em> {{ footer_copyright }} {{ now|format:Y }}
+      </span>
+      <span>
+        {{ collection:social_media_channels }}
+          <a href="{{ url }}" target="_blank" rel="noopener noreferer" title="{{ title }}">{{ title }}</a>{{ if first}} | {{ endif }}
+        {{ /collection:social_media_channels }}
+      </span>
+    </span>
+  </div>
+</footer>

@@ -1,0 +1,48 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: vendor/swiper/swiper-custom
+ * -----------------------------------------------------------------------------
+ */
+
+.swiper-slide{
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+.swiper-wrapper{
+  -webkit-transform-style: preserve-3d;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: $space-1x;
+  @include bp-sm() {
+    bottom: $space-2x;
+  }
+}
+
+// Pagination
+.swiper-pagination {
+
+  .swiper-pagination-bullet {
+    background-color: $color-white;
+    border: none;
+    height: 8px;
+    margin: 0 3px;
+    opacity: 1 !important;
+    width: 8px;
+
+    &:focus {
+      outline: none !important;
+    }
+
+    @include bp-md() {
+      height: 10px;
+      margin: 0 4px;
+      width: 10px;
+    }
+
+    &.swiper-pagination-bullet-active {
+      background-color: $color-orange;
+    }
+  }
+}

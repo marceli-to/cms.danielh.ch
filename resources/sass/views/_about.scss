@@ -1,0 +1,146 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: views/about
+ * -----------------------------------------------------------------------------
+ *
+ *
+ */
+
+.about {
+
+  > div {
+    margin-top: $space-4x;
+
+    @include bp-md() {
+      margin-top: $space-6x;
+    }
+  
+    @include bp-lg() {
+      margin-top: $space-8x;
+    }
+  }
+
+  article {
+    border: 1px solid $color-black;
+    padding: $space-2x;
+  }
+
+  .about__opening,
+  .about__location {
+    padding-top: $space-9x;
+
+    @include bp-md() {
+      padding-top: $space-10x;
+    }
+
+    @include bp-lg() {
+      padding-top: $space-14x;
+    }
+
+    > div {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h2 {
+      @extend %heading-underline;
+      @include font-size($fs-md);
+      margin-bottom: $space-2x;
+      padding-bottom: $space-10x;
+
+      @include bp-lg() {
+        margin-bottom: $space-4x;
+        padding-bottom: $space-15x;
+      }
+
+      &:after {
+        left: 25%;
+      }
+    }
+
+    h3 {
+      @include font-playfair-black();
+    }
+
+    p {
+      @include font-playfair-regular();
+      margin-bottom: $space-6x;
+      text-align: center;
+    }
+
+    a {
+      color: $color-black;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .about__visual {
+    @extend %ratio-visual;
+    height: 100%;
+    margin-top: $space-4x;
+
+    @include bp-md() {
+      margin-top: 0;
+    }
+  }
+
+  .about__location {
+    margin-top: $space-4x;
+
+    @include bp-md() {
+      margin-top: 0;
+    }
+
+    h2 {
+      padding-bottom: $space-6x;
+
+      @include bp-lg() {
+        padding-bottom: $space-10x;
+      }
+    }
+  }
+
+  .about__shop {
+    padding: $space-4x $space-2x;
+    text-align: center;
+
+    @include bp-sm() {
+      padding: $space-6x $space-4x;
+    }
+
+    @include bp-lg() {
+      padding: $space-10x $space-4x;
+    }
+
+    > div {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h2 {
+      @include font-playfair-regular();
+      @include font-size($fs-sm);
+      margin-bottom: $space-4x;
+    }
+
+    h3 {
+      @include font-config-semi();
+      @include font-size($fs-lg);
+      margin-bottom: $space-4x;
+      text-transform: uppercase;
+    }
+
+    p {
+      @include font-playfair-regular();
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

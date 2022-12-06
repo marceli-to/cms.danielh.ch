@@ -1,0 +1,42 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: components/typo/webfonts
+ * -----------------------------------------------------------------------------
+ *
+ * Typography - Webfonts
+ *
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap');
+
+@font-face {
+  font-family: 'Arsilon';
+  src: url('fonts/DhanStudio-Arsilon.eot');
+  src: url('fonts/DhanStudio-Arsilon.eot?#iefix') format('embedded-opentype'), url('fonts/DhanStudio-Arsilon.woff2') format('woff2'), url('fonts/DhanStudio-Arsilon.woff') format('woff'), url('fonts/DhanStudio-Arsilon.svg#Arsilon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ArsilonUnderlines';
+  src: url('fonts/DhanStudio-ArsilonUnderlines.eot');
+  src: url('fonts/DhanStudio-ArsilonUnderlines.eot?#iefix') format('embedded-opentype'), url('fonts/DhanStudio-ArsilonUnderlines.woff2') format('woff2'), url('fonts/DhanStudio-ArsilonUnderlines.woff') format('woff'), url('fonts/DhanStudio-ArsilonUnderlines.svg#ArsilonUnderlines') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ConfigCondensedSemiBold';
+  src: url('fonts/ConfigCondensedSemiBold.eot');
+  src: url('fonts/ConfigCondensedSemiBold.eot?#iefix') format('embedded-opentype'), url('fonts/ConfigCondensedSemiBold.woff2') format('woff2'), url('fonts/ConfigCondensedSemiBold.woff') format('woff'), url('fonts/ConfigCondensedSemiBold.svg#Arsilon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ConfigCondensedBlack';
+  src: url('fonts/ConfigCondensedBlack.eot');
+  src: url('fonts/ConfigCondensedBlack.eot?#iefix') format('embedded-opentype'), url('fonts/ConfigCondensedBlack.woff2') format('woff2'), url('fonts/ConfigCondensedBlack.woff') format('woff'), url('fonts/ConfigCondensedBlack.svg#Arsilon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
