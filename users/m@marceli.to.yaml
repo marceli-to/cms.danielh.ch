@@ -7,3 +7,5 @@ preferences:
     social_media_channels:
       columns:
         - title
+    events:
+      after_save: continue_editing
