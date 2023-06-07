@@ -1,27 +1,13 @@
 <section class="news">
   {{ collection:events as="events" }}
-
+  
     {{ if no_results }}
-      <article>Zur Zeit sind keine Veranstaltungen geplant.</article>
+      <article><h3>Zur Zeit sind keine Veranstaltungen geplant.</h3></article>
     {{ endif }}
-
-    {{ events }}
-      {{ if total_results % 2 != 0 && last }}
-        <article>
-          <h2>
-            <hr>
-            <span>{{ category }}</span>
-            <hr>
-          </h2>
-          <h3>{{ title }}</h3>
-          {{ text }}
-        </article>
-        <article class="news__item--image">    
-          <figure>
-            <img src="{{ image }}" alt="" width="{{ image:width }}" height="{{ image:height }}" class="lazyload">
-          </figure>
-        </article>
-      {{ else }}
+  
+    {{ if total_results > 1 }}
+    
+      {{ events }}
         <article>
           <h2><hr><span>{{ category }}</span><hr></h2>
           <h3>{{ title }}</h3>
@@ -30,8 +16,25 @@
           </figure>
           {{ text }}
         </article>
-      {{ endif }}
-    {{ /events }}
-
+      {{ /events }}
+  
+    {{ else }}
+  
+      {{ events }}
+        <article>
+          <h2><hr><span>{{ category }}</span><hr></h2>
+          <h3>{{ title }}</h3>
+          {{ text }}
+        </article>
+        <article>    
+          <figure>
+            <img src="{{ image }}" alt="" width="{{ image:width }}" height="{{ image:height }}" class="lazyload">
+          </figure>
+        </article>
+      {{ /events }}
+  
+    {{ endif }}
+  
   {{ /collection:events }}
-</section>
+  </section>
+  

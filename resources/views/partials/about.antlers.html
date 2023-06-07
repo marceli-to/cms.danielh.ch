@@ -17,11 +17,17 @@
   </div>
   <div class="grid-2x1-sm">
     <article class="about__shop">
-      <div>
-        <h2>Unser Shop</h2>
-        <h3>Fine Food & Beer</h3>
-        <p>Schon bald kannst du exquisite Schweizer Delikatessen von Regionalen Anbietern sowie aus dem SlowFood Sortiment von Daniel H. zuhause geniessen. Im Moment kosten wir sie für die perfekte Genussfreude vor.</p>
-      </div>
+      {{ if teaser }}
+        <div>
+          {{ teaser }}
+        </div>
+      {{ else }}
+        <div>
+          <h2>Unser Shop</h2>
+          <h3>Fine Food & Beer</h3>
+          <p>Schon bald kannst du exquisite Schweizer Delikatessen von Regionalen Anbietern sowie aus dem SlowFood Sortiment von Daniel H. zuhause geniessen. Im Moment kosten wir sie für die perfekte Genussfreude vor.</p>
+        </div>
+      {{ /if }}
     </article>
     <article class="about__location">
       <div>
