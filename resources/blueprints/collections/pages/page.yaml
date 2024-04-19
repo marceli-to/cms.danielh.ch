@@ -35,16 +35,14 @@ sections:
             - required
             - 'min:1'
       -
-        handle: daily_menu
+        handle: menu
         field:
           collapse: false
           always_show_set_button: false
           previews: true
           buttons:
-            - h2
             - h3
             - bold
-            - italic
             - unorderedlist
             - removeformat
             - anchor
@@ -60,7 +58,7 @@ sections:
           enable_paste_rules: true
           antlers: false
           remove_empty_nodes: false
-          display: 'Daily Menu'
+          display: Menu
           type: bard
           icon: bard
           listable: hidden

@@ -1,0 +1,83 @@
+/**
+ * -----------------------------------------------------------------------------
+ * File: views/menu
+ * -----------------------------------------------------------------------------
+ *
+ *
+ */
+
+.menu {
+
+  > div {
+    margin-top: $space-4x;
+
+    @include bp-md() {
+      margin-top: $space-6x;
+    }
+  
+    @include bp-lg() {
+      margin-top: $space-8x;
+    }
+  }
+
+  article {
+    border: 1px solid $color-black;
+    padding: $space-2x;
+  }
+
+  .menu__visual {
+    @extend %ratio-visual;
+    height: 100%;
+    margin-top: $space-4x;
+
+    @include bp-md() {
+      margin-top: 0;
+    }
+  }
+
+  .menu__content {
+    padding-top: $space-9x;
+
+    @include bp-md() {
+      padding-top: $space-10x;
+    }
+
+    @include bp-lg() {
+      padding-top: $space-14x;
+    }
+
+    > div {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h2 {
+      @extend %heading-underline;
+      @include font-size($fs-md);
+      margin-bottom: 0;
+      padding-bottom: $space-10x;
+
+      @include bp-lg() {
+        margin-bottom: $space-4x;
+        padding-bottom: $space-5x;
+      }
+
+      &:after {
+        bottom: 20px;
+        @include bp-lg() {
+          bottom: -10px;
+        }
+      }
+    }
+
+    p {
+      @include font-playfair-regular();
+      line-height: 1.45;
+      margin-bottom: $space-6x;
+      text-align: center;
+    }
+  }
+
+}
